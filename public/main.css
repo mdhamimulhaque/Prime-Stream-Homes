@@ -418,7 +418,7 @@ video {
 }
 
 h2{
-  font-size:3.4375rem;
+  font-size:2.625rem;
   font-weight:700;
 }
 
@@ -656,6 +656,14 @@ h4{
   margin-bottom: 2.5rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .flex {
   display: flex;
 }
@@ -702,14 +710,6 @@ h4{
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-8 {
-  gap: 2rem;
 }
 
 .gap-x-8 {
@@ -773,11 +773,6 @@ h4{
   padding-right: 1.25rem;
 }
 
-.py-28 {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -791,16 +786,24 @@ h4{
   padding-bottom: 3rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
-.pb-8 {
-  padding-bottom: 2rem;
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
-.text-center {
-  text-align: center;
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .text-2xl {
@@ -903,16 +906,22 @@ h4{
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-yellow-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
-  .md\:mb-10 {
-    margin-bottom: 2.5rem;
-  }
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 
+@media (min-width: 768px) {
   .md\:flex-row {
     flex-direction: row;
   }
@@ -924,32 +933,12 @@ h4{
 }
 
 @media (min-width: 1024px) {
-  .lg\:col-span-8 {
-    grid-column: span 8 / span 8;
-  }
-
-  .lg\:col-span-4 {
-    grid-column: span 4 / span 4;
-  }
-
-  .lg\:mb-10 {
-    margin-bottom: 2.5rem;
-  }
-
   .lg\:block {
     display: block;
   }
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
-  }
-
-  .lg\:gap-4 {
-    gap: 1rem;
   }
 
   .lg\:gap-x-6 {
@@ -960,6 +949,11 @@ h4{
   .lg\:px-11 {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
+  }
+
+  .lg\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .lg\:pl-36 {
@@ -989,10 +983,6 @@ h4{
     grid-column: span 4 / span 4;
   }
 
-  .xl\:flex-row {
-    flex-direction: row;
-  }
-
   .xl\:gap-x-8 {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
@@ -1003,5 +993,12 @@ h4{
     padding-bottom: 2rem;
   }
 }
+
+@media (min-width: 1536px) {
+  .\32xl\:flex-col {
+    flex-direction: column;
+  }
+}
+
 
 

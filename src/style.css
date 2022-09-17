@@ -10,7 +10,7 @@
 /* base reset */
 @layer base{
     h2{
-        font-size:3.4375rem;
+        font-size:2.625rem;
         font-weight:700;
     }
     h3{
@@ -39,5 +39,6 @@
 .top_banner{
     min-height: 450px;
 }
+
 
 
