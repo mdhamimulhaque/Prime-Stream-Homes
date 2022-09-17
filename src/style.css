@@ -7,6 +7,29 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.nav-item{
-    @apply list-none transition-all duration-500 hover:text-yellow-300
+/* base reset */
+@layer base{
+    h2{
+        font-size:3.4375rem;
+        font-weight:700;
+    }
 }
+
+/* components */
+@layer components{
+    .btn{
+        @apply w-60 h-16 font-semibold border-4 tracking-wide;
+    }
+}
+
+/* apply  */
+.nav-item{
+    @apply list-none transition-all duration-500 hover:text-yellow-300;
+}
+
+/* custom design */
+.top_banner{
+    min-height: 450px;
+}
+
+
