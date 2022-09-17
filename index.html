@@ -10,85 +10,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/448403bc71.js" crossorigin="anonymous"></script>
     <!-- tailwind css -->
     <link rel="stylesheet" href="./public/main.css">
 </head>
 
-<body>
-    <header class="header_containe ">
+<body class="bg-slate-100">
+    <header class="header_containe bg-white drop-shadow-lg ">
         <!-- navbar section start-->
-        <section class="navbar_area flex justify-between py-6 container mx-auto ">
+        <section class="navbar_area flex justify-between py-5 container mx-auto px-3 md:px-4">
             <div class="brand">
-                <h2 class="font-semibold text-3xl">Prime Stream Homes</h2>
+                <h2 class="font-semibold text-2xl">Prime Stream Homes</h2>
             </div>
             <!-- navbar -->
-            <nav class="nav_items_area text-base font-medium flex gap-x-8">
-                <ul class="flex gap-x-8">
-                    <li class="list-none transition-all duration-500 hover:text-yellow-300"><a href="#"
-                            class="no-underline">Home</a></li>
-                    <li class="list-none transition-all duration-500 hover:text-yellow-300"><a href="#"
-                            class="no-underline">About</a></li>
-                    <li class="list-none transition-all duration-500 hover:text-yellow-300"><a href="#"
-                            class="no-underline">Portfolio</a></li>
-                    <li class="list-none transition-all duration-500 hover:text-yellow-300"><a href="#"
-                            class="no-underline">Service</a></li>
-                    <li class="list-none transition-all duration-500 hover:text-yellow-300"><a href="#"
-                            class="no-underline">Services</a></li>
-                    <li class="list-none transition-all duration-500 hover:text-yellow-300"><a href="#"
-                            class="no-underline">Project</a></li>
-                    <li class="list-none transition-all duration-500 hover:text-yellow-300"><a href="#"
-                            class="no-underline">Blog</a></li>
-                    <li class="list-none transition-all duration-500 hover:text-yellow-300"><a href="#"
-                            class="no-underline">Contact</a></li>
-                </ul>
-                <div class="cart_box">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path
-                            d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
-                    </svg>
-                </div>
-            </nav>
+            <div class="nav_list mt-1 hidden lg:block">
+                <nav class="nav_items_area text-base font-medium flex gap-x-8 items-center">
+                    <ul class="flex lg:gap-x-6 xl:gap-x-8">
+                        <li class="nav-item"><a href="#" class="no-underline">Home</a></li>
+                        <li class="nav-item"><a href="#" class="no-underline">About</a></li>
+                        <li class="nav-item"><a href="#" class="no-underline">Portfolio</a></li>
+                        <li class="nav-item"><a href="#" class="no-underline">Service</a></li>
+                        <li class="nav-item"><a href="#" class="no-underline">Services</a></li>
+                        <li class="nav-item"><a href="#" class="no-underline">Project</a></li>
+                        <li class="nav-item"><a href="#" class="no-underline">Blog</a></li>
+                        <li class="nav-item"><a href="#" class="no-underline">Contact</a></li>
+                    </ul>
+                    <div class="cart_box text-xl">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- hand berger menu -->
+            <div class="responsive_menu flex items-center text-xl lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </section>
         <!-- navbar section end-->
-        <!-- top banner section start-->
-        <section class="top_banner_area grid grid-cols-4 ">
-            <div class="banner_img_area relative col-span-3">
-                <img class="w-full " src="./img/banner.png" alt="">
-            </div>
-            <!-- banner text -->
-            <div class="banner_img_text text-white absolute lg:mt-40 lg:ml-40 lg:w-1/2">
-                <h2 class="text-6xl font-bold mb-5">Construction</h2>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis egestas pellentesque
-                    libero
-                    dolor in diam consequat ut. Mi nibh amet viverra id aliquet neque odio</p>
-                <button class="btn_1 w-44 h-14 bg-primary">VIEW OUR WORK</button>
-            </div>
-            <!-- servide section -->
-            <aside class="our_services bg-primary">
-                <h2 class="section_title font-bold text-5xl mt-3 mb-5 mt-11 mx-10">Our Services</h2>
-                <div class="service_item_box flex gap-x-8 mx-10 my-10">
-                    <img class="object-cover" src="./img/g-2.png" alt="">
-                    <div class="service_text_box">
-                        <div class="subtitle font-bold text-2xl">Building Construction</div>
-                        <p class="text-white">Lorem ipsum dolor sit consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="service_item_box flex gap-x-8 mx-10 my-10">
-                    <img class="object-cover" src="./img/g-1.png" alt="">
-                    <div class="service_text_box">
-                        <div class="subtitle font-bold text-2xl">Foundation Work</div>
-                        <p class="text-white">Lorem ipsum dolor sit consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="service_item_box flex gap-x-8 mx-10 my-10">
-                    <img class="object-cover" src="./img/g-3.png" alt="">
-                    <div class="service_text_box">
-                        <div class="subtitle font-bold text-2xl">Site Management</div>
-                        <p class="text-white">Lorem ipsum dolor sit consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </aside>
-        </section>
+
         <!-- top banner section end-->
     </header>
 
