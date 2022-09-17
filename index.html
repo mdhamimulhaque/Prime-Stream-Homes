@@ -52,29 +52,30 @@
 
 
     <!-- top banner section start-->
-    <section class="banner_area grid grid-cols-12 gap-4 ">
+    <section class="banner_area grid grid-cols-12">
         <!-- left side -->
-        <div class="banner_left col-span-8 bg-no-repeat bg-center bg-cover relative top_banner"
+        <div class="banner_left col-span-12 xl:col-span-8 bg-no-repeat bg-center bg-cover relative top_banner"
             style="background-image: url(./img/banner.png)">
-            <div class="overlay_top absolute top-0 left-0 h-full w-full bg-black opacity-75 pl-36 pt-20 pb-16">
-                <h2 class="mb-6 border-l-8 border-yellow-400 pl-7 text-white">Construction</h2>
-                <p class="pr-32 pb-12 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis
-                    egestas
-                    pellentesque
-                    libero dolor in
-                    diam consequat ut. Mi nibh amet viverra id aliquet neque odio.</p>
+            <div
+                class="overlay_top absolute top-0 left-0 h-full w-full bg-black opacity-75 px-5 lg:pl-36 flex justify-center flex-col">
+                <h2 class="mb-6 border-l-8 border-yellow-400 text-4xl lg:text-6xl pl-3 lg:pl-7 text-white">Construction
+                </h2>
+                <p class=" lg:pr-32 pb-12 text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis egestaspellent esquelibero dolor in
+                    diam consequat ut. Mi nibh amet viverra id aliquet neque odio.
+                </p>
                 <button
-                    class="btn text-white hover:text-black transition-all duration-300 bg-yellow-400 border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500">
+                    class="btn text-white hover:text-black transition-all duration-300 bg-yellow-400 border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 ">
                     VIEW OUR WORK
                 </button>
 
             </div>
         </div>
         <!-- right side -->
-        <div class="banner_right col-span-4 bg-yellow-400 px-11 pt-8">
+        <div class="banner_right col-span-12 xl:col-span-4 bg-yellow-400 px-5 lg:px-11 py-20 xl:py-8">
             <h3>Our Services</h3>
-            <div class="banner_services_area mt-8">
-                <div class="banner_service_box flex gap-4 mb-10">
+            <div class="banner_services_area flex flex-wrap justify-between  md:flex-row mt-6 ">
+                <div class="banner_service_box flex flex-col md:flex-row gap-4 mb-10">
                     <div class="icon text-6xl text-white">
                         <i class="fa-solid fa-helmet-safety"></i>
                     </div>
@@ -83,7 +84,7 @@
                         <p class="text-white">Lorem ipsum dolor sit <br> consectetur adipiscing elit.</p>
                     </div>
                 </div>
-                <div class="banner_service_box flex gap-4 mb-10">
+                <div class="banner_service_box flex flex-col md:flex-row gap-4 mb-10">
                     <div class="icon text-6xl text-white">
                         <i class="fa-solid fa-hammer"></i>
                     </div>
@@ -92,7 +93,7 @@
                         <p class="text-white">Lorem ipsum dolor sit <br> consectetur adipiscing elit.</p>
                     </div>
                 </div>
-                <div class="banner_service_box flex gap-4 mb-10">
+                <div class="banner_service_box flex flex-col md:flex-row gap-4">
                     <div class="icon text-6xl text-white">
                         <i class="fa-solid fa-person-digging"></i>
                     </div>
