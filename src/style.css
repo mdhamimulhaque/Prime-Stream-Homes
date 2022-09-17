@@ -30,15 +30,20 @@
     }
 }
 
-/* apply  */
+/*=========== apply =============== */
 .nav-item{
     @apply list-none transition-all duration-500 hover:text-yellow-300;
 }
 
-/* custom design */
+/*--- banner ---*/
 .top_banner{
     min-height: 450px;
 }
-
-
+.banner_service_box{
+    @apply flex flex-col md:flex-row gap-4 mb-10;
+}
+/*--- icon ---*/
+.icon_white{
+    @apply text-6xl text-white;
+}
 
