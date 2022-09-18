@@ -26,7 +26,13 @@
 /* components */
 @layer components{
     .btn{
-        @apply w-60 h-16 font-semibold border-4 tracking-wide;
+        @apply w-60 h-16 font-semibold border-4 tracking-wide transition-all duration-500;
+    }
+    .btn_black{
+        @apply text-black hover:text-white  border-black hover:bg-black;
+    }
+    .btn_yellow{
+        @apply border-yellow-400 hover:bg-yellow-400 hover:text-white;
     }
 }
 

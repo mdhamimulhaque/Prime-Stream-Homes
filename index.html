@@ -27,7 +27,7 @@
             <div class="nav_list mt-1 hidden lg:block">
                 <nav class="nav_items_area text-base font-medium flex gap-x-8 items-center">
                     <ul class="flex lg:gap-x-6 xl:gap-x-8">
-                        <li class="nav-item"><a href="#" class="no-underline">Home</a></li>
+                        <li class="nav-item"><a href="#" class="no-underline text-yellow-400">Home</a></li>
                         <li class="nav-item"><a href="#" class="no-underline">About</a></li>
                         <li class="nav-item"><a href="#" class="no-underline">Portfolio</a></li>
                         <li class="nav-item"><a href="#" class="no-underline">Service</a></li>
@@ -36,7 +36,7 @@
                         <li class="nav-item"><a href="#" class="no-underline">Blog</a></li>
                         <li class="nav-item"><a href="#" class="no-underline">Contact</a></li>
                     </ul>
-                    <div class="cart_box text-xl">
+                    <div class="cart_box text-xl cursor-pointer">
                         <i class="fa-solid fa-cart-plus"></i>
                     </div>
                 </nav>
@@ -65,7 +65,7 @@
                     diam consequat ut. Mi nibh amet viverra id aliquet neque odio.
                 </p>
                 <button
-                    class="btn text-white hover:text-black transition-all duration-300 bg-yellow-400 border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 ">
+                    class="btn text-white hover:text-black bg-yellow-400 border-yellow-400 hover:bg-yellow-500 hover:border-yellow-500 ">
                     VIEW OUR WORK
                 </button>
 
@@ -80,7 +80,7 @@
                         <i class="fa-solid fa-helmet-safety"></i>
                     </div>
                     <div class="info">
-                        <h4>Building Construction</h4>
+                        <h4><a href="#">Building Construction</a></h4>
                         <p class="text-white">Lorem ipsum dolor sit <br> consectetur adipiscing elit.</p>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                         <i class="fa-solid fa-hammer"></i>
                     </div>
                     <div class="info">
-                        <h4>Foundation Work</h4>
+                        <h4><a href="#">Foundation Work</a></h4>
                         <p class="text-white">Lorem ipsum dolor sit <br> consectetur adipiscing elit.</p>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                         <i class="fa-solid fa-person-digging"></i>
                     </div>
                     <div class="info">
-                        <h4>Site Management</h4>
+                        <h4><a href="#">Site Management</a></h4>
                         <p class="text-white">Lorem ipsum dolor sit <br> consectetur adipiscing elit.</p>
                     </div>
                 </div>
@@ -109,13 +109,63 @@
     <!-- free quote start -->
     <section class="free_quote_area pb-6 pt-3 bg-white px-5">
         <div class="free_quote_container container mx-auto flex flex-wrap justify-between">
-            <h2 class="mt-3">Get a Quote For Your Project</h2>
-            <button
-                class="btn mt-3 border-yellow-400 hover:bg-yellow-400 hover:text-white transition-all duration-300">FREE
-                QUOTE</button>
+            <h3 class="mt-3">Get a Quote For Your Project</h3>
+            <button class="btn mt-3 btn_yellow">FREE QUOTE</button>
         </div>
     </section>
     <!-- free quote end -->
+
+    <!-- project summery area start -->
+    <section class="project_summery_area">
+        <div class="project_summery_wrapper grid grid-cols-12">
+            <div class="project_summery_img_area col-span-3">
+                <img class="object-cover w-full" src="./img/project_summery.png" alt="">
+            </div>
+            <div class="project_summery_info_area col-span-9 p-5 lg:pl-36 lg:pt-36 relative">
+                <h3>No Project Too Big Or Too Small</h3>
+                <div class="project_summery_info_details_box flex gap-4">
+                    <div class="summery_info_box_1">
+                        <p class="mt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim
+                            tristique tellus
+                            sed faucibus nullam. Tincidunt mauris ut quam sed mauris proin feugiat. Scelerisque lorem
+                            posuere iaculis nunc amet phasellus.</p>
+                        <p class="mt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim
+                            tristique tellus
+                            sed faucibus nullam. </p>
+                        <p class="mt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim
+                            tristique tellus
+                            sed faucibus nullam. Tincidunt mauris ut quam sed mauris proin feugiat. Scelerisque lorem
+                            posuere iaculis nunc amet phasellus.</p>
+
+                    </div>
+
+                    <div class="summery_info_box_2">
+                        <p class="mt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim
+                            tristique tellus
+                            sed faucibus nullam. Tincidunt mauris ut quam sed mauris proin feugiat. Scelerisque lorem
+                            posuere iaculis nunc amet phasellus.</p>
+                        <p class="mt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim
+                            tristique tellus
+                            sed faucibus nullam. </p>
+                        <button class="btn btn_black mt-8">LEARN MORE</button>
+                    </div>
+                </div>
+
+                <!-- total project count area -->
+                <div class="total_project_count_area flex absolute bottom-0 right-0 w-full">
+                    <div class="project_yearly text-center w-2/4 bg-yellow-400 py-10">
+                        <h3>55+</h3>
+                        <p class="font-semibold text-xs">YEARS ESTABLISHED</p>
+                    </div>
+                    <div class="project_yearly text-center w-2/4 bg-black text-white py-10">
+                        <h3>95+</h3>
+                        <p class="font-semibold text-xs">COMPLETED PROJECTS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- project summery area end -->
 
 </body>
 
